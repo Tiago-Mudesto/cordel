@@ -19,7 +19,7 @@
 
 html, body {
     min-width: 100vh;       /* tamanho minimo da altura do conteudo */
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     font-family: var(--fonte1);
 }
 
@@ -62,21 +62,38 @@ section{
     
 }
 
+section p.espaçar{
+    padding-bottom: 2em;
+}
+
 section.normal {
     color: black;
     background-color: white;
+    box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.501);
 }
 
 section.imagem {
     color: white;
     background-color: black;
+    box-shadow: inset 6px 6px 12px 0px black;
+    background-size: cover;
+    background-attachment: fixed;       /*Efeito parallax no CSS*/
 }
 
 section.imagem p{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.409);
+    background-color: rgba(0, 0, 0, 0.431);
 }
 
+section#img001{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right, center;
+}
+
+section#img002{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right, center;
+}
 footer {
     color: white;
     background-color: black;
