@@ -34,6 +34,28 @@ header a:hover, footer a:hover {
 
 }
 
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;       /*espaçamento entre linhas*/
+    padding-left: 35px;
+}
+
+section.normal {
+    color: black;
+    background-color: white;
+}
+
+section.imagem {
+    color: white;
+    background-color: black;
+}
+
+section.imagem p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.409);
+}
+
 footer {
     color: white;
     background-color: black;
